@@ -23,14 +23,14 @@ class BookList extends Component {
     this.changeSearch = this.debounce(this.props.searchBook, 500)
   }
 
-  componentWillReceiveProps(nextProps) {
-    // debugger
-    console.log("componentWillReceiveProps", nextProps)
-  }
+  // componentWillReceiveProps(nextProps) {
+  //   // debugger
+  //   console.log("componentWillReceiveProps", nextProps)
+  // }
+
 
   // Debouncing the call to searchBook fun till the user has stopped typing
   handleChange = (e) => {
-    // debugger
     const val = e.target.value
 
     this.setState({ searchBookValue: val }, () => {
@@ -94,7 +94,7 @@ class BookList extends Component {
       renderBook = <Loader/>;
     } else if(isSearch &&  !searchedBook) {
       renderBook = <div className="flex">
-                    <h3 className="center">{noDataHeading}</h3>
+                    <h3 className="center">Searched Book Not Found...</h3>
                   </div>
     }
 
