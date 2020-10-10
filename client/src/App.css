@@ -1,0 +1,141 @@
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3.3rem;
+  font-size: 2rem;
+  margin-top: 1.25rem;
+}
+
+.remove-btn {
+  margin-left: -0.6rem;
+  margin-right: 10px;
+  float: left;
+  padding-right: 1rem;
+  background-color: transparent;
+  border-color: transparent;
+  border-right: 2px solid rgb(240, 240, 240);
+  color: #007bff;
+  font-size: 1rem;
+}
+
+.edit-button {
+  margin-right: 10px;
+  margin-top: -0.1rem;
+  background-color: transparent;
+  border-color: transparent;
+  color: #007bff;
+  font-size: 1rem;
+}
+
+.category-select {
+  margin-bottom: 0.7rem;
+}
+
+.book {
+  margin-bottom: 0.7rem;
+}
+
+.select-category {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.mb-12 {
+  margin-bottom: 0.75rem;
+}
+
+.ib {
+  display: inline-block;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.w-auto {
+  width: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .flex-container {
+      flex-direction: column;
+    }
+}
+
+.m-rt {
+  margin-right: 0.75rem;
+}
+
+.label {
+  margin-bottom: 0;
+  margin-top: .5rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.spinner {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50px,-50px);
+
+}
+.spinner div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  animation: spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #00b9f5 transparent transparent transparent;
+}
+.spinner div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.spinner div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.spinner div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+#invalid_card_no{
+position:absolute;
+bottom:-20px;
+left:0;
+}
+@keyframes spinner {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 350px) {
+  .spinner {
+    top: 60%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .spinner {
+    top: 65%;
+  }
+}
