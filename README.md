@@ -6,7 +6,7 @@ You can add, delete, search and edit books from the library.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes using the MERN stack with Express and MongoDB.  (If you wish to use the Ruby on Rails backend API, [go here](https://github.com/jklemon17/book-library-api).
+These instructions will get you a copy of the project up and running on your local machine for development 
 
 ### Prerequisites
 
