@@ -1,4 +1,4 @@
-## Check it out live on Heroku: [Library Management System](https://mern-stack-book-library.herokuapp.com/)
+## Check it out live on Heroku: [Library Management System](https://booklibrarysystem.herokuapp.com/)
 
 ## Library Management System
 
@@ -26,7 +26,7 @@ Run the servers with the following command:
 npm run dev
 ```
 
-Once its running, head over to your browser to [see the Library](http://localhost:3000/).
+Once its running, head over to your browser to [see the Library](http://localhost:8000/).
 
 ## Authors
 
